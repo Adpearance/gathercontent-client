@@ -198,4 +198,10 @@ class Base implements JsonSerializable, \Serializable
             $this->{$propertyName} = $propertyValue;
         }
     }
+    
+    // Adding this so we can access configs as simple arrays for easier modification
+    public function getData() 
+    {
+        return $this->data;
+    }
 }
